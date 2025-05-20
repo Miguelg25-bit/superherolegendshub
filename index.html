@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Superhero Legends Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            animation: fadeIn 1s ease;
+        }
+
+        header {
+            padding: 40px 20px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #f1c40f;
+            text-shadow: 2px 2px 5px #000;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            max-width: 700px;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #ecf0f1;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #f39c12;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 10px #f39c12;
+        }
+
+        .hero-card h2 {
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .hero-card p {
+            font-size: 1em;
+            color: #ddd;
+        }
+
+        .hero-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #f39c12;
+            color: #000;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .hero-card a:hover {
+            background: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Superhero Legends Hub</h1>
+        <p class="intro">
+            Explore heroes and villains from Marvel and DC.
+        </p>
+    </header>
+
+    <div class="hero-grid">
+        <div class="hero-card">
+            <h2>Marvel</h2>
+            <p>Spider-Man, Iron Man, Captain America.</p>
+            <a href="pg3.html">Enter</a>
+        </div>
+        <div class="hero-card">
+            <h2>DC</h2>
+            <p>Batman, Superman, Wonder Woman.</p>
+            <a href="pg2.html">Enter</a>
+        </div>
+        <div class="hero-card">
+            <h2>Avengers</h2>
+            <p>Thor, Black Widow, Hulk.</p>
+            <a href="pg5.html">Enter</a>
+        </div>
+        <div class="hero-card">
+            <h2>X-Men</h2>
+            <p>Wolverine, Storm, Professor X.</p>
+            <a href="pg4.html">Enter</a>
+        </div>
+        <div class="hero-card">
+            <h2>Villains</h2>
+            <p>Thanos, Joker, Ultron.</p>
+            <a href="pg6.html">Enter</a>
+        </div>
+    </div>
+</body>
+</html>
